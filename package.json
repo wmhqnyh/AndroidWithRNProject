@@ -1,0 +1,22 @@
+{
+  "name": "androidwithrnproject",
+  "version": "1.0.0",
+  "description": "init androidwithproject",
+  "main": "index.android.js",
+  "scripts": {
+    "test": "no"
+  },
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "keywords": [
+    "no"
+  ],
+  "author": "wangmh",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-native": "^0.57.3"
+  }
+}

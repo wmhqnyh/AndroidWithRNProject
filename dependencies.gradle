@@ -1,0 +1,130 @@
+ext {
+
+    //Android
+    androidBuildToolsVersion = '27.0.3'
+    androidMinSdkVersion = 16
+    androidTargetSdkVersion = 27
+    androidCompileSdkVersion = 27
+
+    supportLibraryVersion = '27.1.1'
+
+    //ViewLibraries
+    butterKnifeVersion = '8.8.1'
+
+    //DataLibraries
+
+    //leakcanary
+    leakcanary = '1.6.1'
+    //okhttp
+    okhttp = '3.11.0'
+    //okhttp-logging-interceptor
+    okhttp_logging_interceptor = '3.11.0'
+    //fresco
+    fresco ='1.3.0'
+    //retrofit
+    retrofit = '2.4.0'
+    //gson
+    gson = '2.8.5'
+    //rxjava
+    rxjava = '2.2.2'
+    //rxandroid
+    rxandroid = '2.1.0'
+
+    //retrofit_adapter_rxjava
+    retrofit_adapter_rxjava = '2.4.0'
+    //retrofit_converter_gson
+    retrofit_converter_gson = '2.4.0'
+
+    //logger
+    logger = '2.2.0'
+    //timer
+    timber = '4.7.1'
+    //sensorsdata
+    sensorsdata = '2.0.2'
+    //multidex
+    multidex = '1.0.3'
+    //baserecyclerviewadapterhelper
+    baserecyclerviewadapterhelper = '2.9.42'
+    //cropper
+    cropper = '1.0.1'
+    //pdfview
+    pdfview = "1.0.4"
+    //glide
+    glide = '4.8.0'
+    //lottie
+    lottie = '2.8.0'
+    //arouter
+    arouter_api = '1.4.0'
+    arouter_compile = '1.2.1'
+    arouter_register = '1.0.2'
+
+    swipebacklayout = '1.1.0'
+    androidutilcode = '1.20.4'
+    autosize = '1.0.0'
+    rxpermissions = '0.10.2'
+    eventbus ='3.1.1'
+    constraint_layout = "1.1.3"
+    rxlifecycle = '2.2.2'
+
+    androidDependencies = [
+            appcompat_v7: "com.android.support:appcompat-v7:${supportLibraryVersion}",
+            recyclerView: "com.android.support:recyclerview-v7:${supportLibraryVersion}",
+            cardview_v7 : "com.android.support:cardview-v7:${supportLibraryVersion}",
+            support_v4  : "com.android.support:support-v4:${supportLibraryVersion}",
+            design      : "com.android.support:design:${supportLibraryVersion}",
+    ]
+
+    viewDependencies = [
+            butterKnife          : "com.jakewharton:butterknife:${butterKnifeVersion}",
+            apt_butterKnife      : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+
+            "fresco"                      : "com.facebook.fresco:fresco:${fresco}",
+            "fresco-imagepipeline-okhttp3": "com.facebook.fresco:imagepipeline-okhttp3:${fresco}",
+            "fresco-animated-gif"         : "com.facebook.fresco:animated-gif:${fresco}",
+
+            glide                         : "com.github.bumptech.glide:glide:${glide}",
+            glide_compiler                : "com.github.bumptech.glide:compiler:${glide}",
+            lottie                        : "com.airbnb.android:lottie:${lottie}",
+            constraint_layout             : "com.android.support.constraint:constraint-layout:${constraint_layout}"
+    ]
+
+    dataDependencies = [
+            rxjava                        : "io.reactivex.rxjava2:rxjava:${rxjava}",
+            rxandroid                     : "io.reactivex.rxjava2:rxandroid:${rxandroid}",
+
+            gson                          : "com.google.code.gson:gson:${gson}",
+            multidex                      : "com.android.support:multidex:${multidex}",
+
+            leakcanary                    : "com.squareup.leakcanary:leakcanary-android:${leakcanary}",
+            leakcanary_no_op              : "com.squareup.leakcanary:leakcanary-android-no-op:${leakcanary}",
+            leakcanary_support_fragment   : "com.squareup.leakcanary:leakcanary-support-fragment:${leakcanary}",
+            rxlifecycle                   : "com.trello.rxlifecycle2:rxlifecycle:${rxlifecycle}",
+            rxlifecycle_components        : "com.trello.rxlifecycle2:rxlifecycle-components:${rxlifecycle}"
+    ]
+
+    httpDependencies =[
+            retrofit                    : "com.squareup.retrofit2:retrofit:${retrofit}",
+            retrofit_adapter_rxjava     : "com.squareup.retrofit2:adapter-rxjava:${retrofit_adapter_rxjava}",
+            retrofit_converter_gson     : "com.squareup.retrofit2:converter-gson:${retrofit_converter_gson}",
+
+            okhttp                      : "com.squareup.okhttp3:okhttp:${okhttp}",
+            okhttp_logging_interceptor  : "com.squareup.okhttp3:logging-interceptor:${okhttp_logging_interceptor}",
+    ]
+
+    thirdLibraryDependencies = [
+            logger                      : "com.orhanobut:logger:${logger}",
+            timber                      : "com.jakewharton.timber:timber:${timber}",
+            sensorsdata                 : "com.sensorsdata.analytics.android:SensorsAnalyticsSDK:${sensorsdata}",
+            brvah                       : "com.github.CymChad:BaseRecyclerViewAdapterHelper:${baserecyclerviewadapterhelper}",
+            cropper                     : "com.edmodo:cropper:${cropper}",
+            android_pdfview             : "com.joanzapata.pdfview:android-pdfview:${pdfview}@aar",
+            swipebacklayout             : "me.imid.swipebacklayout.lib:library:${swipebacklayout}",
+            androidutilcode             : "com.blankj:utilcode:${androidutilcode}",
+            autosize                    : "me.jessyan:autosize:${autosize}",
+            rxpermissions               : "com.github.tbruyelle:rxpermissions:${rxpermissions}",
+            eventbus                    : "org.greenrobot:eventbus:${eventbus}",
+            arouter_api                 : "com.alibaba:arouter-api:${arouter_api}",
+            arouter_compile             : "com.alibaba:arouter-compiler:${arouter_compile}"
+    ]
+
+}
