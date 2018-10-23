@@ -5,9 +5,13 @@ import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
 
+    companion object {
+        var TAG :String = MainActivity::class.simpleName!!
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main)
 
         /**
          *  在kotlin中如果在重写Activity的生命周期没有任何信息
@@ -24,5 +28,17 @@ class MainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
+    }
+
+    override fun onStart() {
+        super.onStart()
+    }
+
+    override fun onPause() {
+        super.onPause()
+    }
+
+    override fun onStop() {
+        super.onStop()
     }
 }
